@@ -1,0 +1,51 @@
+.blog {
+  padding-top: 65px;
+  padding-bottom: 90px;
+  color: $color-black;
+  @media screen and (max-width: $breakpoint-md) {
+    padding-top: 25px;
+  }
+}
+
+.card {
+  &__image {
+    padding: 10px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: $fw-middle;
+    font-size: $fs-20;
+    line-height: $lh-30;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: $fs-16;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: $fs-12;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: $fs-9;
+    color: $color-black;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+		padding-right: 2px;
+  }
+
+  &__text {
+    color: $color-gray;
+    font-weight: $fw-normal;
+    font-size: $fs-16;
+    line-height: $lh-24;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: $fs-12;
+    }
+  }
+}

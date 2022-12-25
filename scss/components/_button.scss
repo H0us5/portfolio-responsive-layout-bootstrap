@@ -1,0 +1,41 @@
+.btn {
+  filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.1));
+  background: $color-main;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: $fw-middle;
+  font-size: $fs-20;
+  line-height: $lh-30;
+  width: 182px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--black {
+    width: 135px;
+    height: 50px;
+    border: 1px solid $color-black;
+    background: transparent;
+    color: $color-black;
+
+    &:hover {
+      border: 1px solid $color-black;
+    }
+  }
+
+  &--sm {
+    width: 150px;
+    height: 50px;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: $fs-16;
+      width: 140px;
+      height: 40px;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: $fs-12;
+      width: 100px;
+      height: 30px;
+    }
+  }
+}

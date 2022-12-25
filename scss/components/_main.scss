@@ -1,0 +1,71 @@
+.main {
+  &--white {
+    background-color: $color-white;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: $fw-semiBold;
+    font-size: $fs-39;
+    line-height: $lh-59;
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: $fs-31;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: $fs-25;
+    }
+  }
+
+  &__subtitle {
+    color: $color-main;
+    font-style: normal;
+    font-weight: $fw-normal;
+    font-size: $fs-16;
+    line-height: $lh-24;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: $fs-12;
+      padding-top: 50px;
+    }
+  }
+
+  &__nav-link {
+    font-style: normal;
+    font-weight: $fw-middle;
+    font-size: $fs-20;
+    color: $color-gray;
+  }
+}
+
+.subtitle {
+  &__decoration {
+    width: 40px;
+    border-bottom: 1.5px solid $color-main;
+    margin-bottom: 7px;
+  }
+}
+
+.active {
+  background-color: $color-main !important;
+
+  &--white {
+    background-color: $color-white !important;
+  }
+}
+
+.nav-link {
+  font-style: normal;
+  font-weight: $fw-middle;
+  font-size: $fs-20;
+  color: $color-gray;
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: $fs-16;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: $fs-12;
+  }
+}

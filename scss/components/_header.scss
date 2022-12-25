@@ -1,0 +1,15 @@
+.nav-link {
+  color: $color-black;
+  font-style: normal;
+  font-weight: $fw-middle;
+  font-size: $fs-20;
+  line-height: $lh-30;
+}
+
+.nav-link:hover {
+	color: $color-main;
+}
+
+.nav-link--active {
+	color: $color-main;
+}
